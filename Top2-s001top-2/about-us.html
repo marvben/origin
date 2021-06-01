@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ReviewComparePlay.com</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/top-n-brands.css" rel="stylesheet">
+    <link href="css/jquery.rateyo.min.css" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+      function populateModal(title, sourceUrl) {
+        $('#modalTitle').html(title);
+        $('#modalCopy').html('');
+
+        $.get(sourceUrl, function(data) {
+          $('#modalCopy').html(data);
+        });
+      }
+
+      function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split("=");
+          if (pair[0] == variable) {
+            return pair[1];
+          }
+        }
+        return (false);
+      }
+    </script>
+  </head>
+
+
+  <body>
+    <!-- ADMIN BAR -->
+    <!-- END ADMIN BAR -->
+    <!--HEADER CONTAINER-->
+    <header>
+      <div class="container">
+        <div class="row">
+
+          <!--NAV BAR-->
+          <nav class="navbar navbar-default mfNavbar">
+            <div class="container-fluid">
+              <div class="navbar-header mfNavbarHeader">
+                <a class="navbar-brand" href="index.html">
+                  <div class="logo"></div>
+                </a>
+                <button type="button" class="navbar-toggle mfBtnNavbar" data-toggle="collapse" data-target="#navCollapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse mfNavCollapse" id="navCollapse">
+                  <ul class="nav navbar-nav navbar-right mfNavBarRight">
+                    <li><a class="navLink" href="index.html" data-toggle="collapse" data-target="#navCollapse">TOP 2</a></li>
+                    <li><a class="navLink" href="reviews.html" data-toggle="collapse" data-target="#navCollapse">REVIEWS</a></li>
+                    <li><a class="navLink" href="mortgages.html" data-toggle="collapse" data-target="#navCollapse">LIVE CASINO</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!--END NAV BAR-->
+
+        </div>
+      </div>
+    </header>
+    <!--END HEADER CONTAINER-->
+
+
+    <!--CONTENT CONTAINER-->
+    <div class="contentContainer">
+
+
+      <div class="container">
+        <div class="articleContent">
+
+          <h2>About Us</h2>
+
+          <p>Information is power. And Comparisons.org gives you the information you need – quickly, easily, and in one convenient place.</p>
+
+          <p>We’re a service-oriented website, created to provide today’s consumers with useful information and comparison services on a wide range of topics, including a strong focus on middle class financial and lifestyle issues.</p>
+
+          <p>You live a busy life, and research can be time-consuming. We make it simple, and help demystify the often confusing world of mortgages, refinancing, auto insurance, credit cards, and similar. With expert, plain-English articles on a diverse
+            range of topics and our unique “side by side” rate comparison services, we’ll help you save money by being a smarter, better informed consumer.</p>
+
+          <p>So pour yourself a cup of coffee (or anything else you fancy) and take a few moments to browse our articles and services. We’re constantly adding more content and expanding our scope, so be sure to check back often.</p>
+
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="footer-disclaimer">
+                </div>
+                <ul class="list-inline footerNav">
+                  <li><a href="index.html">TOP 2</a></li>
+                  <li><a href="reviews.html">REVIEWS</a></li>
+                  <li><a href="mortgages.html">LIVE CASINO</a></li>
+                </ul>
+                <div class="referralText">We earn referral fees from sites featured.</div>
+                <div class="copyright">&copy;2020 Comparisons.org. All Rights Reserved.<br> Trademarks utilized on our website belong to their respective owners and no implied or expressed endorsement of our website or services is intended. Through in-depth research
+                  and experienced editors we provide feedback about products and services. We are independently owned, and opinions expressed here are our own. Ratings are determined by our subjective opinion and based on a methodology that
+                  considers our analysis of brand reputation, product offerings, customer success and conversion rates, compensation paid to us and general consumer interest. Please be advised that this site may accept compensation from
+                  brands that appear on the site, and such compensation may impact the numerical rankings, star ratings and or higher positions in which the companies (and/or their products) are listed. Except as expressly set forth in our
+                  Terms of Use, all representations and warranties regarding the information presented on this page are disclaimed. The information which appears on this site is subject to change at any time.
+                  <br><br> Arieli Center, 2689 Dundas St. W, Toronto, Canada </div>
+                <ul class="list-inline copyright">
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="https://www.google.com" target="_blank">Privacy
+                      Policy</a></li>
+                  <li><a href="terms.html">Terms of Use</a></li>
+                  <li><a href="https://www.google.com" target="_blank">CA
+                      Residents - Do Not Sell My Info</a></li>
+                  <li><a href="#" class="mfModal" data-toggle="modal" data-target="#modalHowWeRank">How We
+                      Rank</a></li>
+                  <li><a href="#" class="mfModal" data-toggle="modal" data-target="#modalAdvertiserDisclosure">Advertiser Disclosure</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade" id="modalHowWeRank" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <h4 id="modalTitle" class="modal-title">How We Rank</h4>
+            </div>
+            <div class="modal-body mfModalCopy">
+              <p>The sites that appear on this site are companies from which we receive compensation. Ranking and order of products on the site are subject to change and the site does not include all companies in the marketplace. Rankings are impacted
+                by site reputation, visitor interest and success rates, as well as, compensation paid by site. Compensation may impact the numerical rankings, star ratings and or higher positions in which the companies (and/or their products)
+                are listed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalAdvertiserDisclosure" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <h4 id="modalTitle" class="modal-title">Advertiser Disclosure</h4>
+            </div>
+            <div class="modal-body mfModalCopy">
+              <p>ReviewComparePlay.com is supported by referral fees from the sites featured. The sites and advertisements that we present are from companies from which comparisons.org receives compensation. Comparisons.org cannot and does not present
+                information about every site or offer available.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="consent_blackbar" style="position: fixed; Width: 100%; bottom: 0; left: 0; z-index: 10000;"></div>
+      <div id="teconsent"></div>
+
+      <div id="infoModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 id="modalTitle" class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+              <div id="modalCopy" class="mfModalCopy left">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </body>
+
+</html>

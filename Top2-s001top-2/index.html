@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CompareReviewPlay.com</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/top-n-brands.css" rel="stylesheet">
+    <link href="css/jquery.rateyo.min.css" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+      function populateModal(title, sourceUrl) {
+        $('#modalTitle').html(title);
+        $('#modalCopy').html('');
+
+        $.get(sourceUrl, function(data) {
+          $('#modalCopy').html(data);
+        });
+      }
+
+      function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split("=");
+          if (pair[0] == variable) {
+            return pair[1];
+          }
+        }
+        return (false);
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+
+          <!--NAV BAR-->
+          <nav class="navbar navbar-default mfNavbar">
+            <div class="container-fluid">
+              <div class="navbar-header mfNavbarHeader">
+                <a class="navbar-brand" href="index.html">
+                  <div class="logo"></div>
+                </a>
+                <button type="button" class="navbar-toggle mfBtnNavbar" data-toggle="collapse" data-target="#navCollapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse mfNavCollapse" id="navCollapse">
+                  <ul class="nav navbar-nav navbar-right mfNavBarRight">
+                    <li><a class="navLink" href="index.html" data-toggle="collapse" data-target="#navCollapse">TOP 2</a></li>
+                    <li><a class="navLink" href="reviews.html" data-toggle="collapse" data-target="#navCollapse">REVIEWS</a></li>
+                    <li><a class="navLink" href="mortgages.html" data-toggle="collapse" data-target="#navCollapse">LIVE CASINO</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!--END NAV BAR-->
+
+        </div>
+      </div>
+    </header>
+    <!--END HEADER CONTAINER-->
+
+
+    <!--CONTENT CONTAINER-->
+    <div class="contentContainer">
+
+
+      <!--SITE INFO-->
+      <div class="sectionSiteInfo sectionSiteInfoImage" style="background-image: url('img/main-hero-leovegas.jpg');">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-8 col-sm-12">
+              <h1 class="main-headline">The New Online Casino Winner For January 2021</h1>
+              <div class="textLarge">Take advantage of more competition & increase your profits. 5 Best Online Casinos of 2021</div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 text-right modalLinks">
+              <a href="#" class="mfModal" data-toggle="modal" data-target="#modalHowWeRank">How We
+                Rank</a>&nbsp;&nbsp;|&nbsp;
+              <a href="#" class="mfModal" data-toggle="modal" data-target="#modalAdvertiserDisclosure">Advertiser Disclosure</a>
+              <div class="referralText">We earn referral fees from sites featured.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END SITE INFO-->
+
+      <!--CONTENT-->
+      <div class="trusted">
+        <img class="img-responsive center-block" src="img/mortgage_ads_seen_on_sans_ehl.png">
+      </div>
+
+      <div id="visitorCountOverlayContainer" class="hidden-lg hidden-md hidden-sm">
+        <div class="visitorCountOverlay">
+          <button class="visitorCountClose"></button>
+          <table onclick="window.open('https://www.google.com','_blank');">
+            <tr>
+              <td><img src="img/icon_visitorCount.png"></td>
+              <td style="padding:0 15px;"><strong>2,367</strong> slot players chose <strong>Leo Vegas Loans</strong> today
+              </td>
+              <td><span class="glyphicon glyphicon-menu-right"></span></td>
+              <td style="min-width:35px;"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- End Visitor Count Overlay -->
+
+      <!--REVIEWS DESKTOP-->
+      <div class="table-responsive hidden-xs displayOverflow">
+        <table class="table table-striped tableReviews">
+          <thead class='rankingTableHead'>
+            <tr>
+              <th class='tdSite'>
+                Site </th>
+              <th class='tdHighlights'>
+                Highlights </th>
+              <th class='tdBonusLink'>
+                Welcome Bonus </th>
+              <th class='tdStarRank'>
+                User Rating </th>
+              <th class='tdScore'>
+                Our Score </th>
+              <th class='tdVisit'>
+                Visit Site </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="brand brandNo_0" id="brandD_59efa1cad0ad7a48e50dc26a">
+
+
+              <td class='tdSite'>
+
+                <button class="outboundLink brandsFlag numberOneChoice" onclick="window.open('https://www.google.com');"></button>
+
+                <a class="outboundLink siteLogo" href="https://www.google.com" target="_blank">
+                  <img src="img/mr-green-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Mr Green">
+                  <img src="img/mr-green-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Mr Green">
+                </a>
+              </td>
+
+              <td class='tdHighlights'>
+                <ul>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      Rated #1 in customer satisfaction by Global Gaming Awards 7 consecutive years! </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      Is the Industry’s Leading Online Casino </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      Carries an A+ Better Business Bureau Rating </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      5-30 Year Mortgage terms, Adjustable and Fixed Rates </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      Video, Classic and Progressive slots. Table Games too </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      Simple, ‘Play for free’ mode to Help You Decide Before You Deposit </a>
+                  </li>
+                </ul>
+              </td>
+
+
+
+              <td class='tdScore'>
+                <div class="ourScore">Our Score</div>
+                <a id="scoreD_59efa1cad0ad7a48e50dc26a" class="scoreText" href="review-quicken.html">9.8</a><br>
+                <a class="smallLink" href="review-mr-green.html">Review</a>
+              </td>
+
+              <td class='tdVisit'>
+                <div class="peopleChose hidden-xs" onclick="window.open('https://www.google.com','_blank');" style="cursor:pointer;"><strong>2,367 </strong> people chose this casino today
+                </div>
+                <button class="outboundLink btnReviewWidget" onclick="window.open('https://www.google.com');" type="button">VIEW&nbsp;RATES</button>
+                <div class="availableIn">
+                  Available in<br>
+                  <strong style="text-transform: uppercase;">Toronto, CA</strong>
+                </div>
+              </td>
+            </tr>
+            <script>
+              $(function() {
+                $("#starRating0_48028").rateYo({
+                  rating: 4.9,
+                  numStars: 5,
+                  precision: 2,
+                  minValue: 1,
+                  maxValue: 5
+                });
+              });
+            </script>
+            <tr class="brand brandNo_1" id="brandD_59efa221d0ad7a4d9d3ee023">
+
+
+              <td class='tdSite'>
+                <a class="outboundLink siteLogo" href="https://www.google.com" target="_blank">
+                  <img src="img/leo-vegas-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="LeoVegas Casino">
+                  <img src="img/leo-vegas-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="LeoVegas Casino">
+                </a>
+              </td>
+
+              <td class='tdHighlights'>
+                <ul>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      Offers Fixed Rate Loans in Terms of 8-30 Years </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      Backed by Quicken Loans </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      5/1, 7/1, and 10/1 Adjustable Rate Mortgages (ARM) </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      Has Systems in Place for Fast Approvals </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      "Push Button, Get Mortgage" </a>
+                  </li>
+                </ul>
+              </td>
+
+
+
+              <td class='tdScore'>
+                <div class="ourScore">Our Score</div>
+                <a id="scoreD_59efa221d0ad7a4d9d3ee023" class="scoreText" href="review-rocket.html">9.3</a><br>
+                <a class="smallLink" href="review-rocket.html">Review</a>
+              </td>
+
+              <td class='tdVisit'>
+                <button class="outboundLink btnReviewWidget" onclick="window.open('https://www.google.com');" type="button">VIEW&nbsp;RATES</button>
+              </td>
+            </tr>
+            <script>
+              $(function() {
+                $("#starRating1_48028").rateYo({
+                  rating: 4.65,
+                  numStars: 5,
+                  precision: 2,
+                  minValue: 1,
+                  maxValue: 5
+                });
+              });
+            </script>
+          </tbody>
+        </table>
+      </div>
+      <!--END REVIEWS DESKTOP-->
+
+
+
+      <!--REVIEWS MOBILE-->
+      <div id="reviewsMobileCondensed" class="table-responsive visible-xs tableReviews">
+        <table class="table table-striped">
+          <tbody>
+
+
+            <!--BRAND 0-->
+            <tr class="brand brandNo_0" id="brandM_0">
+              <td class="tdMobileRanking">
+                <div class="mobileRanking">1</div>
+                <div class="scoreContainerMobile">SCORE<br><a id="scoreD_0" class="scoreText" href="review-mr-green.html" target="_blank">9.8</a>
+                </div>
+              </td>
+              <td class="tdMobileLeft">
+                <a class="outboundLink siteLogo" href="https://www.google.com" target="_blank">
+                  <img src="img/mr-green-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Mr Green">
+                  <img src="img/mr-green-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Mr Green">
+                </a>
+                <div class="mobileInfo">
+                  <div class="mobileReviewLink">
+                    <a href="review-mr-green.html" target="_blank">Review</a>&nbsp;&middot;
+                    <a href="#" data-toggle="modal" data-target="#brandModal-0">Learn More</a>
+                  </div>
+                </div>
+              </td>
+              <td class="tdMobileRight">
+                <a class="bonusLink" href="https://www.google.com" target="_blank">
+                  <button class="btnSimple" type="button">
+                    VIEW&nbsp;RATES </button>
+                </a>
+              </td>
+            </tr>
+            <script>
+              $(function() {
+                $("#starRatingMobileCondensed0_11382").rateYo({
+                  rating: [BRAND - N - STARS],
+                  numStars: 5,
+                  precision: 2,
+                  minValue: 1,
+                  maxValue: 5,
+                  starWidth: '16px'
+                });
+              });
+            </script>
+
+
+            <!--BRAND 1-->
+            <tr class="brand brandNo_1" id="brandM_1">
+              <td class="tdMobileRanking">
+                <div class="mobileRanking">2</div>
+                <div class="scoreContainerMobile">SCORE<br><a id="scoreD_1" class="scoreText" href="review-leo-vegas.html" target="_blank">9.3</a>
+                </div>
+              </td>
+              <td class="tdMobileLeft">
+                <a class="outboundLink siteLogo" href="https://www.google.com" target="_blank">
+                  <img src="img/leo-vegas-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="LeoVegas Casino">
+                  <img src="img/leo-vegas-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="LeoVegas Casino">
+                </a>
+                <div class="mobileInfo">
+                  <div class="mobileReviewLink">
+                    <a href="review-leo-vegas.html" target="_blank">Review</a>&nbsp;&middot;
+                    <a href="#" data-toggle="modal" data-target="#brandModal-1">Learn More</a>
+                  </div>
+                </div>
+              </td>
+              <td class="tdMobileRight">
+                <a class="bonusLink" href="https://www.google.com" target="_blank">
+                  <button class="btnSimple" type="button">
+                    VIEW&nbsp;RATES </button>
+                </a>
+              </td>
+            </tr>
+            <script>
+              $(function() {
+                $("#starRatingMobileCondensed0_70413").rateYo({
+                  rating: [BRAND - N - STARS],
+                  numStars: 5,
+                  precision: 2,
+                  minValue: 1,
+                  maxValue: 5,
+                  starWidth: '16px'
+                });
+              });
+            </script>
+
+
+          </tbody>
+        </table>
+      </div>
+      <!--END REVIEWS MOBILE -->
+
+
+
+      <!--MODAL 0-->
+      <div id="brandModal-0" class="modal fade rvwsModal" role="dialog">
+        <div class="modal-dialog">
+
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <a class="outboundLink siteLogo" href="https://www.google.com" target="_blank">
+                <img src="img/mr-green-logo-205x91.png" class="img-responsive center-block brandLogo" alt="Mr Green">
+              </a>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>
+                  <a class="outboundLink" href="https://www.google.com" target="_blank">
+                    Rated #1 in customer satisfaction by JD Power 7 consecutive years! </a>
+                </li>
+                <li>
+                  <a class="outboundLink" href="https://www.google.com" target="_blank">
+                    Is the Industry’s Leading Online Lender </a>
+                </li>
+                <li>
+                  <a class="outboundLink" href="https://www.google.com" target="_blank">
+                    Carries an A+ Better Business Bureau Rating </a>
+                </li>
+                <li>
+                  <a class="outboundLink" href="https://www.google.com" target="_blank">
+                    5-30 Year Mortgage terms, Adjustable and Fixed Rates </a>
+                </li>
+                <li>
+                  <a class="outboundLink" href="https://www.google.com" target="_blank">
+                    VA and FHA loans. Reverse Mortgages too </a>
+                </li>
+                <li>
+                  <a class="outboundLink" href="https://www.google.com" target="_blank">
+                    Simple, Powerful Online Tools to Help You Research </a>
+                </li>
+              </ul>
+              <button class="btnSimple" onclick="window.open('https://www.google.com','_blank');" type="button">
+                VIEW&nbsp;RATES </button>
+            </div>
+            <div class="modal-footer">
+              <a data-dismiss="modal">Close</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- END MODAL 0 -->
+      <!--MODAL 0-->
+      <div id="brandModal-1" class="modal fade rvwsModal" role="dialog">
+        <div class="modal-dialog">
+
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <a class="outboundLink siteLogo" href="https://www.google.com" target="_blank">
+                <img src="img/leo-vegas-logo-205x91.png" class="img-responsive center-block brandLogo" alt="LeoVegas Casino">
+              </a>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>
+                  <a class="outboundLink" href="https://www.google.com" target="_blank">
+                    Offers Fixed Rate Loans in Terms of 8-30 Years </a>
+                </li>
+                <li>
+                  <a class="outboundLink" href="https://www.google.com" target="_blank">
+                    Backed by Quicken Loans </a>
+                </li>
+                <li>
+                  <a class="outboundLink" href="https://www.google.com" target="_blank">
+                    5/1, 7/1, and 10/1 Adjustable Rate Mortgages (ARM) </a>
+                </li>
+                <li>
+                  <a class="outboundLink" href="https://www.google.com" target="_blank">
+                    Has Systems in Place for Fast Approvals </a>
+                </li>
+                <li>
+                  <a class="outboundLink" href="https://www.google.com" target="_blank">
+                    "Push Button, Get Mortgage" </a>
+                </li>
+              </ul>
+              <button class="btnSimple" onclick="window.open('https://www.google.com','_blank');" type="button">
+                VIEW&nbsp;RATES </button>
+            </div>
+            <div class="modal-footer">
+              <a data-dismiss="modal">Close</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- END MODAL 0 -->
+
+
+      <div class="sectionContent">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+
+
+              <h3>The Home Refinancing Plan That Puts Money In Your Pocket</h3>
+              <p>Millions of Homeowners are eligible for the Government’s LIVE CASINO program. Even if their credit is poor, or they are upside down in their mortgage.</p>
+
+              <h3>There has never been a better time to LIVE CASINO .</h3>
+              <p>That’s because the little known government program called the <a href="https://www.google.com" target="_blank">LIVE CASINO Refinance program can help millions of Americans get cash in
+                  their pocket !</a></p>
+
+              <h3>But If You Don’t Act, You Will Miss Out</h3>
+              <p> If the thought of a receiving a lump sum on your mortgage sounds appealing, the time to act is right now. A LIVE CASINO refinance pays off your existing first mortgage and any remaining funds are yours to use as you wish!</p><br>
+
+              <button onclick="window.open('https://www.google.com');">Do
+                I Qualify for a LIVE CASINO?</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="topRatingOnlyBorderBox">
+
+        <!-- Visitor Count Overlay -->
+        <script>
+          $(document).ready(function() {
+            $(".visitorCountClose").click(function() {
+              $(".visitorCountOverlay").hide();
+            });
+          });
+        </script>
+
+        <div id="visitorCountOverlayContainer" class="hidden-lg hidden-md hidden-sm">
+          <div class="visitorCountOverlay">
+            <button class="visitorCountClose"></button>
+            <table onclick="window.open('https://www.google.com','_blank');">
+              <tr>
+                <td><img src="img/icon_visitorCount.png"></td>
+                <td style="padding:0 15px;"><strong>2,367</strong> people chose <strong>Mr Green Casino </strong> today
+                </td>
+                <td><span class="glyphicon glyphicon-menu-right"></span></td>
+                <td style="min-width:35px;"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- End Visitor Count Overlay -->
+
+        <!--REVIEWS DESKTOP-->
+        <div class="table-responsive hidden-xs displayOverflow">
+          <table class="table table-striped tableReviews">
+            <thead class='rankingTableHead'>
+              <tr>
+                <th class='tdSite'>
+                  Site </th>
+                <th class='tdHighlights'>
+                  Highlights </th>
+                <th class='tdBonusLink'>
+                  Welcome Bonus </th>
+                <th class='tdStarRank'>
+                  User Rating </th>
+                <th class='tdScore'>
+                  Our Score </th>
+                <th class='tdVisit'>
+                  Visit Site </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="brand brandNo_0" id="brandD_59efa1cad0ad7a48e50dc26a">
+
+
+                <td class='tdSite'>
+
+                  <button class="outboundLink brandsFlag numberOneChoice" onclick="window.open('https://www.google.com');"></button>
+
+                  <a class="outboundLink siteLogo" href="https://www.google.com" target="_blank">
+                    <img src="img/mr-green-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Mr Green">
+                    <img src="img/mr-green-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Mr Green">
+                  </a>
+                </td>
+
+                <td class='tdHighlights'>
+                  <ul>
+                    <li>
+                      <a class="outboundLink" href="https://www.google.com" target="_blank">
+                        Rated #1 in customer satisfaction by JD Power 7 consecutive years! </a>
+                    </li>
+                    <li>
+                      <a class="outboundLink" href="https://www.google.com" target="_blank">
+                        Is the Industry’s Leading Online Lender </a>
+                    </li>
+                    <li>
+                      <a class="outboundLink" href="https://www.google.com" target="_blank">
+                        Carries an A+ Better Business Bureau Rating </a>
+                    </li>
+                    <li>
+                      <a class="outboundLink" href="https://www.google.com" target="_blank">
+                        5-30 Year Mortgage terms, Adjustable and Fixed Rates </a>
+                    </li>
+                    <li>
+                      <a class="outboundLink" href="https://www.google.com" target="_blank">
+                        VA and FHA loans. Reverse Mortgages too </a>
+                    </li>
+                    <li>
+                      <a class="outboundLink" href="https://www.google.com" target="_blank">
+                        Simple, Powerful Online Tools to Help You Research </a>
+                    </li>
+                  </ul>
+                </td>
+
+
+
+                <td class='tdScore'>
+                  <div class="ourScore">Our Score</div>
+                  <a id="scoreD_59efa1cad0ad7a48e50dc26a" class="scoreText" href="review-quicken.html">9.8</a><br>
+                  <a class="smallLink" href="review-quicken.html">Review</a>
+                </td>
+
+                <td class='tdVisit'>
+                  <div class="peopleChose hidden-xs" onclick="window.open('https://www.google.com','_blank');" style="cursor:pointer;"><strong>2,367 </strong> people chose this site today
+                  </div>
+                  <button class="outboundLink btnReviewWidget" onclick="window.open('https://www.google.com');" type="button">VIEW&nbsp;RATES</button>
+                  <div class="availableIn">
+                    Available in<br>
+                    <strong style="text-transform: uppercase;">Toronto, ON</strong>
+                  </div>
+                </td>
+              </tr>
+              <script>
+                $(function() {
+                  $("#starRating0_61918").rateYo({
+                    rating: 4.9,
+                    numStars: 5,
+                    precision: 2,
+                    minValue: 1,
+                    maxValue: 5
+                  });
+                });
+              </script>
+              <tr class="brand brandNo_1" id="brandD_59efa221d0ad7a4d9d3ee023">
+
+
+                <td class='tdSite'>
+                  <a class="outboundLink siteLogo" href="https://www.google.com" target="_blank">
+                    <img src="img/leo-vegas-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="LeoVegas Casino">
+                    <img src="img/leo-vegas-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="LeoVegas Casino">
+                  </a>
+                </td>
+
+                <td class='tdHighlights'>
+                  <ul>
+                    <li>
+                      <a class="outboundLink" href="https://www.google.com" target="_blank">
+                        Offers Fixed Rate Loans in Terms of 8-30 Years </a>
+                    </li>
+                    <li>
+                      <a class="outboundLink" href="https://www.google.com" target="_blank">
+                        Backed by Quicken Loans </a>
+                    </li>
+                    <li>
+                      <a class="outboundLink" href="https://www.google.com" target="_blank">
+                        5/1, 7/1, and 10/1 Adjustable Rate Mortgages (ARM) </a>
+                    </li>
+                    <li>
+                      <a class="outboundLink" href="https://www.google.com" target="_blank">
+                        Has Systems in Place for Fast Approvals </a>
+                    </li>
+                    <li>
+                      <a class="outboundLink" href="https://www.google.com" target="_blank">
+                        "Push Button, Get Mortgage" </a>
+                    </li>
+                  </ul>
+                </td>
+
+
+
+                <td class='tdScore'>
+                  <div class="ourScore">Our Score</div>
+                  <a id="scoreD_59efa221d0ad7a4d9d3ee023" class="scoreText" href="review-rocket.html">9.3</a><br>
+                  <a class="smallLink" href="review-rocket.html">Review</a>
+                </td>
+
+                <td class='tdVisit'>
+                  <button class="outboundLink btnReviewWidget" onclick="window.open('https://www.google.com');" type="button">VIEW&nbsp;RATES</button>
+                </td>
+              </tr>
+              <script>
+                $(function() {
+                  $("#starRating1_61918").rateYo({
+                    rating: 4.65,
+                    numStars: 5,
+                    precision: 2,
+                    minValue: 1,
+                    maxValue: 5
+                  });
+                });
+              </script>
+            </tbody>
+          </table>
+        </div>
+        <!--END REVIEWS DESKTOP-->
+
+
+
+        <!--REVIEWS MOBILE-->
+        <div id="reviewsMobileCondensed" class="table-responsive visible-xs tableReviews">
+          <table class="table table-striped">
+            <tbody>
+
+
+              <!--BRAND 0-->
+              <tr class="brand brandNo_0" id="brandM_0">
+                <td class="tdMobileRanking">
+                  <div class="mobileRanking">1</div>
+                  <div class="scoreContainerMobile">SCORE<br><a id="scoreD_0" class="scoreText" href="review-quicken.html" target="_blank">9.8</a>
+                  </div>
+                </td>
+                <td class="tdMobileLeft">
+                  <a class="outboundLink siteLogo" href="https://www.google.com" target="_blank">
+                    <img src="img/mr-green-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Mr Green">
+                    <img src="img/mr-green-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Mr Green">
+                  </a>
+                  <div class="mobileInfo">
+                    <div class="mobileReviewLink">
+                      <a href="review-quicken.html" target="_blank">Review</a>&nbsp;&middot;
+                      <a href="#" data-toggle="modal" data-target="#brandModal-0">Learn More</a>
+                    </div>
+                  </div>
+                </td>
+                <td class="tdMobileRight">
+                  <a class="bonusLink" href="https://www.google.com" target="_blank">
+                    <button class="btnSimple" type="button">
+                      VIEW&nbsp;RATES </button>
+                  </a>
+                </td>
+              </tr>
+              <script>
+                $(function() {
+                  $("#starRatingMobileCondensed0_31335").rateYo({
+                    rating: [BRAND - N - STARS],
+                    numStars: 5,
+                    precision: 2,
+                    minValue: 1,
+                    maxValue: 5,
+                    starWidth: '16px'
+                  });
+                });
+              </script>
+
+
+              <!--BRAND 1-->
+              <tr class="brand brandNo_1" id="brandM_1">
+                <td class="tdMobileRanking">
+                  <div class="mobileRanking">2</div>
+                  <div class="scoreContainerMobile">SCORE<br><a id="scoreD_1" class="scoreText" href="review-rocket.html" target="_blank">9.3</a>
+                  </div>
+                </td>
+                <td class="tdMobileLeft">
+                  <a class="outboundLink siteLogo" href="https://www.google.com" target="_blank">
+                    <img src="img/leo-vegas-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="LeoVegas Casino">
+                    <img src="img/leo-vegas-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="LeoVegas Casino">
+                  </a>
+                  <div class="mobileInfo">
+                    <div class="mobileReviewLink">
+                      <a href="review-rocket.html" target="_blank">Review</a>&nbsp;&middot;
+                      <a href="#" data-toggle="modal" data-target="#brandModal-1">Learn More</a>
+                    </div>
+                  </div>
+                </td>
+                <td class="tdMobileRight">
+                  <a class="bonusLink" href="https://www.google.com" target="_blank">
+                    <button class="btnSimple" type="button">
+                      VIEW&nbsp;RATES </button>
+                  </a>
+                </td>
+              </tr>
+              <script>
+                $(function() {
+                  $("#starRatingMobileCondensed0_99277").rateYo({
+                    rating: [BRAND - N - STARS],
+                    numStars: 5,
+                    precision: 2,
+                    minValue: 1,
+                    maxValue: 5,
+                    starWidth: '16px'
+                  });
+                });
+              </script>
+
+
+            </tbody>
+          </table>
+        </div>
+        <!--END REVIEWS MOBILE -->
+
+
+
+        <!--MODAL 0-->
+        <div id="brandModal-0" class="modal fade rvwsModal" role="dialog">
+          <div class="modal-dialog">
+
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <a class="outboundLink siteLogo" href="https://www.google.com" target="_blank">
+                  <img src="img/mr-green-logo-205x91.png" class="img-responsive center-block brandLogo" alt="Mr Green">
+                </a>
+              </div>
+              <div class="modal-body">
+                <ul>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      Rated #1 in customer satisfaction by JD Power 7 consecutive years! </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      Is the Industry’s Leading Online Lender </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      Carries an A+ Better Business Bureau Rating </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      5-30 Year Mortgage terms, Adjustable and Fixed Rates </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      VA and FHA loans. Reverse Mortgages too </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      Simple, Powerful Online Tools to Help You Research </a>
+                  </li>
+                </ul>
+                <button class="btnSimple" onclick="window.open('https://www.google.com','_blank');" type="button">
+                  VIEW&nbsp;RATES </button>
+              </div>
+              <div class="modal-footer">
+                <a data-dismiss="modal">Close</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- END MODAL 0 -->
+        <!--MODAL 0-->
+        <div id="brandModal-1" class="modal fade rvwsModal" role="dialog">
+          <div class="modal-dialog">
+
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <a class="outboundLink siteLogo" href="https://www.google.com" target="_blank">
+                  <img src="img/leo-vegas-logo-205x91.png" class="img-responsive center-block brandLogo" alt="LeoVegas Casino">
+                </a>
+              </div>
+              <div class="modal-body">
+                <ul>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      Offers Fixed Rate Loans in Terms of 8-30 Years </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      Backed by Quicken Loans </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      5/1, 7/1, and 10/1 Adjustable Rate Mortgages (ARM) </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      Has Systems in Place for Fast Approvals </a>
+                  </li>
+                  <li>
+                    <a class="outboundLink" href="https://www.google.com" target="_blank">
+                      "Push Button, Get Mortgage" </a>
+                  </li>
+                </ul>
+                <button class="btnSimple" onclick="window.open('https://www.google.com','_blank');" type="button">
+                  VIEW&nbsp;RATES </button>
+              </div>
+              <div class="modal-footer">
+                <a data-dismiss="modal">Close</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- END MODAL 0 -->
+
+      </div>
+      <script>
+        $('.topRatingOnlyBorderBox').find('table').each(function() {
+          $(this).find('.brand').not(':first').remove();
+        });
+        $('.topRatingOnlyBorderBox').find('table').each(function() {
+          $(this).find('.brandBullets').not(':first').remove();
+        });
+      </script>
+      <footer>
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="footer-disclaimer">
+                </div>
+                <ul class="list-inline footerNav">
+                  <li><a href="index.html">TOP 2</a></li>
+                  <li><a href="reviews.html">REVIEWS</a></li>
+                  <li><a href="mortgages.html">LIVE CASINO</a></li>
+                </ul>
+                <div class="referralText">We earn referral fees from sites featured.</div>
+                <div class="copyright">&copy;2021 ReviewComparePlay.com All Rights Reserved.<br> Trademarks utilized on our website belong to their respective owners and no implied or expressed endorsement of our website or services is intended. Through in-depth research
+                  and experienced editors we provide feedback about products and services. We are independently owned, and opinions expressed here are our own. Ratings are determined by our subjective opinion and based on a methodology that
+                  considers our analysis of brand reputation, product offerings, customer success and conversion rates, compensation paid to us and general consumer interest. Please be advised that this site may accept compensation from
+                  brands that appear on the site, and such compensation may impact the numerical rankings, star ratings and or higher positions in which the companies (and/or their products) are listed. Except as expressly set forth in our
+                  Terms of Use, all representations and warranties regarding the information presented on this page are disclaimed. The information which appears on this site is subject to change at any time.
+                  <br><br> Arieli Center, 2689 Dundas St. W, Toronto, Canada </div>
+                <ul class="list-inline copyright">
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="https://www.google.com" target="_blank">Privacy
+                      Policy</a></li>
+                  <li><a href="terms.html">Terms of Use</a></li>
+                  <li><a href="https://www.google.com" target="_blank">CA
+                      Residents - Do Not Sell My Info</a></li>
+                  <li><a href="#" class="mfModal" data-toggle="modal" data-target="#modalHowWeRank">How We
+                      Rank</a></li>
+                  <li><a href="#" class="mfModal" data-toggle="modal" data-target="#modalAdvertiserDisclosure">Advertiser Disclosure</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade" id="modalHowWeRank" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <h4 id="modalTitle" class="modal-title">How We Rank</h4>
+            </div>
+            <div class="modal-body mfModalCopy">
+              <p>The sites that appear on this site are companies from which we receive compensation. Ranking and order of products on the site are subject to change and the site does not include all companies in the marketplace. Rankings are impacted
+                by site reputation, visitor interest and success rates, as well as, compensation paid by site. Compensation may impact the numerical rankings, star ratings and or higher positions in which the companies (and/or their products)
+                are listed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalAdvertiserDisclosure" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <h4 id="modalTitle" class="modal-title">Advertiser Disclosure</h4>
+            </div>
+            <div class="modal-body mfModalCopy">
+              <p>ReviewComparePlay.com is supported by referral fees from the sites featured. The sites and advertisements that we present are from companies from which comparisons.org receives compensation. Comparisons.org cannot and does not present
+                information about every site or offer available.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="consent_blackbar" style="position: fixed; Width: 100%; bottom: 0; left: 0; z-index: 10000;"></div>
+      <div id="teconsent"></div>
+
+      <div id="infoModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 id="modalTitle" class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+              <div id="modalCopy" class="mfModalCopy left">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </body>
+
+</html>

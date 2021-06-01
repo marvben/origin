@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ReviewComparePlay.com</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/top-n-brands.css" rel="stylesheet">
+    <link href="css/jquery.rateyo.min.css" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+      function populateModal(title, sourceUrl) {
+        $('#modalTitle').html(title);
+        $('#modalCopy').html('');
+
+        $.get(sourceUrl, function(data) {
+          $('#modalCopy').html(data);
+        });
+      }
+
+      function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split("=");
+          if (pair[0] == variable) {
+            return pair[1];
+          }
+        }
+        return (false);
+      }
+    </script>
+  </head>
+
+
+  <body>
+    <!-- ADMIN BAR -->
+    <!-- END ADMIN BAR -->
+    <!--HEADER CONTAINER-->
+    <header>
+      <div class="container">
+        <div class="row">
+
+          <!--NAV BAR-->
+          <nav class="navbar navbar-default mfNavbar">
+            <div class="container-fluid">
+              <div class="navbar-header mfNavbarHeader">
+                <a class="navbar-brand" href="index.html">
+                  <div class="logo"></div>
+                </a>
+                <button type="button" class="navbar-toggle mfBtnNavbar" data-toggle="collapse" data-target="#navCollapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse mfNavCollapse" id="navCollapse">
+                  <ul class="nav navbar-nav navbar-right mfNavBarRight">
+                    <li><a class="navLink" href="index.html" data-toggle="collapse" data-target="#navCollapse">TOP 2</a></li>
+                    <li><a class="navLink" href="reviews.html" data-toggle="collapse" data-target="#navCollapse">REVIEWS</a></li>
+                    <li><a class="navLink" href="mortgages.html" data-toggle="collapse" data-target="#navCollapse">LIVE CASINO</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!--END NAV BAR-->
+
+        </div>
+      </div>
+    </header>
+    <!--END HEADER CONTAINER-->
+
+
+    <!--CONTENT CONTAINER-->
+    <div class="contentContainer">
+
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Reviews</h2>
+            <p>ReviewComparePlay.com collects interest rate information from Casinos and Betting Sites to help you find the best bonus — fast! Online Casino Bonuses can be very confusing not to mention make a big difference to your profitability. Our team has selected top online casinos providing reviews and
+              notes of leading Canadian Sites. Read Reviews, Compare and Play!</p>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <!--REVIEWS DESKTOP-->
+      <div class="table-responsive hidden-xs displayOverflow">
+        <table class="table table-striped tableReviews">
+          <tbody>
+            <tr class="brand brandNo_0" id="brandD_59efa1cad0ad7a48e50dc26a">
+              <td class='tdSite'>
+                <a class="siteLogo" href="review-mr-green.html">
+                  <img src="img/mr-green-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Mr Green">
+                  <img src="img/mr-green-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Mr Green">
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>Mr Green is an excellent online casino, with an extremely comprehensive website that should meet the needs on almost all online slot / online casino players.</p>
+                <div class="linkReadMore">
+                  <a href="review-mr-green.html">
+                    Read More » </a>
+                </div>
+              </td>
+
+              <td class='tdVisit'>
+                <button class="outboundLink btnReviewWidget" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+              </td>
+            </tr>
+            <script>
+              $(function() {
+                $("#starRating0").rateYo({
+                  rating: 4.9,
+                  numStars: 5,
+                  precision: 2,
+                  minValue: 1,
+                  maxValue: 5
+                });
+              });
+            </script>
+            <tr class="brand brandNo_1" id="brandD_59efa221d0ad7a4d9d3ee023">
+              <td class='tdSite'>
+                <a class="siteLogo" href="review-leo-vegas.html">
+                  <img src="img/leo-vegas-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Leo Vegas">
+                  <img src="img/leo-vegas-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Leo Vegas">
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>Leo Vegas is Quicken Loans’ answer for the consumer who prefers quick online interaction to get things done.</p>
+                <div class="linkReadMore">
+                  <a href="review-rocket.html">
+                    Read More » </a>
+                </div>
+              </td>
+
+              <td class='tdVisit'>
+                <button class="outboundLink btnReviewWidget" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+              </td>
+            </tr>
+            <script>
+              $(function() {
+                $("#starRating1").rateYo({
+                  rating: 4.65,
+                  numStars: 5,
+                  precision: 2,
+                  minValue: 1,
+                  maxValue: 5
+                });
+              });
+            </script>
+            <tr class="brand brandNo_2" id="brandD_59fca3ebd0ad7a3b5800fa09">
+              <td class='tdSite'>
+                <a class="siteLogo" href="review-casumo.html">
+                  <img src="img/casumo-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Casumo">
+                  <img src="img/casumo-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Casumo">
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>Casumo offers a very professional approach to mortgage lending, and simply “feels” good. They have great mortgage products, and an excellent reputation. Check them out.
+                </p>
+                <div class="linkReadMore">
+                  <a href="review-casumo.html">
+                    Read More » </a>
+                </div>
+              </td>
+
+              <td class='tdVisit'>
+                <button class="outboundLink btnReviewWidget" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+              </td>
+            </tr>
+            <script>
+              $(function() {
+                $("#starRating2").rateYo({
+                  rating: 4.5,
+                  numStars: 5,
+                  precision: 2,
+                  minValue: 1,
+                  maxValue: 5
+                });
+              });
+            </script>
+            <tr class="brand brandNo_3" id="brandD_5c5050d3d0ad7a093128946d">
+              <td class='tdSite'>
+                <a class="siteLogo" href="review-betsafe.html">
+                  <img src="img/betsafe-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Betsafe">
+                  <img src="img/betsafe-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Betsafe">
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>“Betsafe is aptly named, because they value transparency and honesty in getting you the best mortgage refi rates around. Use them with confidence.” Read our full review</p>
+                <div class="linkReadMore">
+                  <a href="review-betsafe.html">
+                    Read More » </a>
+                </div>
+              </td>
+
+              <td class='tdVisit'>
+                <button class="outboundLink btnReviewWidget" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+              </td>
+            </tr>
+            <script>
+              $(function() {
+                $("#starRating3").rateYo({
+                  rating: 4.45,
+                  numStars: 5,
+                  precision: 2,
+                  minValue: 1,
+                  maxValue: 5
+                });
+              });
+            </script>
+            <tr class="brand brandNo_4" id="brandD_5a8dcce8d0ad7a40fa536e14">
+              <td class='tdSite'>
+                <a class="siteLogo" href="review-royal-vegas.html">
+                  <img src="img/royal-vegas-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Royal Vegas">
+                  <img src="img/royal-vegas-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Royal Vegas">
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>Royal Vegas™ is an online mortgage aggregator service matching consumers with mortgage lenders that fit their criteria. Let’s see how they stack up.</p>
+                <div class="linkReadMore">
+                  <a href="review-royal-vegas.html">
+                    Read More » </a>
+                </div>
+              </td>
+
+              <td class='tdVisit'>
+                <button class="outboundLink btnReviewWidget" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+              </td>
+            </tr>
+            <script>
+              $(function() {
+                $("#starRating4").rateYo({
+                  rating: 4.45,
+                  numStars: 5,
+                  precision: 2,
+                  minValue: 1,
+                  maxValue: 5
+                });
+              });
+            </script>
+            <tr class="brand brandNo_5" id="brandD_59efa270d0ad7a4c7a26e4e8">
+              <td class='tdSite'>
+                <a class="siteLogo" href="review-mr-bet.html">
+                  <img src="img/mr-bet-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Mr Bet">
+                  <img src="img/mr-bet-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Mr Bet">
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>In a world of "me too" marketing, you always get copycat businesses. And yes, competition is good for everyone, and sometimes these new entries bring a lot to the table.</p>
+                <div class="linkReadMore">
+                  <a href="review-mr-bet.html">
+                    Read More » </a>
+                </div>
+              </td>
+
+              <td class='tdVisit'>
+                <button class="outboundLink btnReviewWidget" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+              </td>
+            </tr>
+            <script>
+              $(function() {
+                $("#starRating5").rateYo({
+                  rating: 4.4,
+                  numStars: 5,
+                  precision: 2,
+                  minValue: 1,
+                  maxValue: 5
+                });
+              });
+            </script>
+            <tr class="brand brandNo_6" id="brandD_5a1da183d0ad7a24412db046">
+              <td class='tdSite'>
+                <a class="siteLogo" href="review-eaglebet.html">
+                  <img src="img/mr-green-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Eaglebet">
+                  <img src="img/mr-green-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Eaglebet">
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>Eaglebet may not have the biggest selection of mortgage types, but they have excellent rates, making them a definite contender on any mortgage shopper’s list.</p>
+                <div class="linkReadMore">
+                  <a href="review-eaglebet.html">
+                    Read More » </a>
+                </div>
+              </td>
+
+              <td class='tdVisit'>
+                <button class="outboundLink btnReviewWidget" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+              </td>
+            </tr>
+            <script>
+              $(function() {
+                $("#starRating6").rateYo({
+                  rating: 4.4,
+                  numStars: 5,
+                  precision: 2,
+                  minValue: 1,
+                  maxValue: 5
+                });
+              });
+            </script>
+            <tr class="brand brandNo_7" id="brandD_5a1da31cd0ad7a394d074fc2">
+              <td class='tdSite'>
+                <a class="siteLogo" href="review-vulkan-vegas.html">
+                  <img src="img/vulkan-vegas-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Vulkan Vegas">
+                  <img src="img/vulkan-vegas-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Vulkan Vegas">
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>Vulkan Vegas reVulkan Vegas helps mortgage customers by providing a full-service, start-to-finish mortgage process. We also loved the wide variety of term options – give them a look!</p>
+                <div class="linkReadMore">
+                  <a href="review-vulkan-vegas.html">
+                    Read More » </a>
+                </div>
+              </td>
+
+              <td class='tdVisit'>
+                <button class="outboundLink btnReviewWidget" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+              </td>
+            </tr>
+            <script>
+              $(function() {
+                $("#starRating7").rateYo({
+                  rating: 4.35,
+                  numStars: 5,
+                  precision: 2,
+                  minValue: 1,
+                  maxValue: 5
+                });
+              });
+            </script>
+            <tr class="brand brandNo_8" id="brandD_5a1da488d0ad7a47ef1ac8a2">
+              <td class='tdSite'>
+                <a class="siteLogo" href="review-guaranteedrate.html">
+                  <img src="img/betway-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Betway">
+                  <img src="img/betway-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Betway">
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>Betway.com is the best of all worlds – they have excellent rates, a robust online mortgage service, and 170 physical locations across all 50 states. Check them out.
+                </p>
+                <div class="linkReadMore">
+                  <a href="review-betway.html">
+                    Read More » </a>
+                </div>
+              </td>
+
+              <td class='tdVisit'>
+                <button class="outboundLink btnReviewWidget" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+              </td>
+            </tr>
+            <script>
+              $(function() {
+                $("#starRating8").rateYo({
+                  rating: 4.3,
+                  numStars: 5,
+                  precision: 2,
+                  minValue: 1,
+                  maxValue: 5
+                });
+              });
+            </script>
+            <tr class="brand brandNo_9" id="brandD_59fc9f7ad0ad7a7b2e02e51a">
+              <td class='tdSite'>
+                <a class="siteLogo" href="review-comeon.html">
+                  <img src="img/comeon-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Come On">
+                  <img src="img/comeon-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Come On">
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>While loan aggregators have become quite common, they all have something to call their own. In this regard, Come On, like their name implies, seeks to give...</p>
+                <div class="linkReadMore">
+                  <a href="review-comeon.html">
+                    Read More » </a>
+                </div>
+              </td>
+
+              <td class='tdVisit'>
+                <button class="outboundLink btnReviewWidget" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+              </td>
+            </tr>
+            <script>
+              $(function() {
+                $("#starRating9").rateYo({
+                  rating: 4.1,
+                  numStars: 5,
+                  precision: 2,
+                  minValue: 1,
+                  maxValue: 5
+                });
+              });
+            </script>
+          </tbody>
+        </table>
+      </div>
+      <!--END REVIEWS DESKTOP-->
+
+      <!--REVIEWS MOBILE -->
+      <div class="table-responsive visible-xs tableReviews">
+        <table class="table table-striped">
+          <tbody>
+            <tr class="brand brandNo_0" id="brandM_59efa1cad0ad7a48e50dc26a">
+              <td class='tdSite'>
+                <a class="outboundLink siteLogo" href="https://www.google.com">
+                  <img src="img/mr-green-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Mr Green">
+                  <img src="img/mr-green-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Mr Green">
+                  <br>
+                  <button class="outboundLink" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>Mr Green is an excellent online lender, with an extremely comprehensive website that should meet the needs on almost all online loan / online mortgage shoppers.</p>
+                <div class="linkReadMore">
+                  <a href="review-mr-green.html">
+                    Read More »
+                  </a>
+                </div>
+              </td>
+            </tr>
+              
+              
+            <tr class="brand brandNo_1" id="brandM_59efa221d0ad7a4d9d3ee023">
+              <td class='tdSite'>
+                <a class="outboundLink siteLogo" href="https://www.google.com">
+                  <img src="img/leo-vegas-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Leo Vegas">
+                  <img src="img/leo-vegas-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Leo Vegas">
+                  <br>
+                  <button class="outboundLink" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>Leo Vegas is Mr. Green's answer for the consumer who prefers quick online interaction to get things done.</p>
+                <div class="linkReadMore">
+                  <a href="review-leo-vegas.html">
+                    Read More »
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr class="brand brandNo_2" id="brandM_59fca3ebd0ad7a3b5800fa09">
+              <td class='tdSite'>
+                <a class="outboundLink siteLogo" href="https://www.google.com">
+                  <img src="img/casumo-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Casumo">
+                  <img src="img/betsafe-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Casumo">
+                  <br>
+                  <button class="outboundLink" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>Casumo offers a very professional approach to mortgage lending, and simply “feels” good. They have great mortgage products, and an excellent reputation. Check them out.
+                </p>
+                <div class="linkReadMore">
+                  <a href="review-casumo.html">
+                    Read More »
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr class="brand brandNo_3" id="brandM_5c5050d3d0ad7a093128946d">
+              <td class='tdSite'>
+                <a class="outboundLink siteLogo" href="https://www.google.com">
+                  <img src="img/betsafe-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Betsafe">
+                  <img src="img/betsafe-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Betsafe">
+                  <br>
+                  <button class="outboundLink" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>“Betsafe is aptly named, because they value transparency and honesty in getting you the best mortgage refi rates around. Use them with confidence.” Read our full review</p>
+                <div class="linkReadMore">
+                  <a href="review-betsafe.html">
+                    Read More »
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr class="brand brandNo_4" id="brandM_5a8dcce8d0ad7a40fa536e14">
+              <td class='tdSite'>
+                <a class="outboundLink siteLogo" href="https://www.google.com">
+                  <img src="img/royal-vegas-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Royal Vegas">
+                  <img src="img/betsafe-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Royal Vegas">
+                  <br>
+                  <button class="outboundLink" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>Royal Vegas is an online mortgage aggregator service matching consumers with mortgage lenders that fit their criteria. Let’s see how they stack up.</p>
+                <div class="linkReadMore">
+                  <a href="review-royal-vegas.html">
+                    Read More »
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr class="brand brandNo_5" id="brandM_59efa270d0ad7a4c7a26e4e8">
+              <td class='tdSite'>
+                <a class="outboundLink siteLogo" href="https://www.google.com">
+                  <img src="img/betsafe-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Mr Bet">
+                  <img src="img/betsafe-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Mr Bet">
+                  <br>
+                  <button class="outboundLink" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>In a world of "me too" marketing, you always get copycat businesses. And yes, competition is good for everyone, and sometimes these new entries bring a lot to the table.</p>
+                <div class="linkReadMore">
+                  <a href="review-eaglebet.html">
+                    Read More »
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr class="brand brandNo_6" id="brandM_5a1da183d0ad7a24412db046">
+              <td class='tdSite'>
+                <a class="outboundLink siteLogo" href="https://www.google.com">
+                  <img src="img/eaglebet-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Eaglebet">
+                  <img src="img/eaglebet-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Eaglebet">
+                  <br>
+                  <button class="outboundLink" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>leovegas may not have the biggest selection of mortgage types, but they have excellent rates, making them a definite contender on any mortgage shopper’s list.</p>
+                <div class="linkReadMore">
+                  <a href="review-eaglebet.html">
+                    Read More »
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr class="brand brandNo_7" id="brandM_5a1da31cd0ad7a394d074fc2">
+              <td class='tdSite'>
+                <a class="outboundLink siteLogo" href="https://www.google.com">
+                  <img src="img/betsafe-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Vulkan Vegas">
+                  <img src="img/betsafe-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Vulkan Vegas">
+                  <br>
+                  <button class="outboundLink" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>Vulkan Vegas reVulkan Vegas helps mortgage customers by providing a full-service, start-to-finish mortgage process. We also loved the wide variety of term options – give them a look!</p>
+                <div class="linkReadMore">
+                  <a href="review-vulkan-vegas.html">
+                    Read More »
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr class="brand brandNo_8" id="brandM_5a1da488d0ad7a47ef1ac8a2">
+              <td class='tdSite'>
+                <a class="outboundLink siteLogo" href="https://www.google.com">
+                  <img src="img/betsafe-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Betway">
+                  <img src="img/betsafe-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Betway">
+                  <br>
+                  <button class="outboundLink" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>Betway Canada is the best of all worlds – they have excellent rates, a robust online mortgage service, and 170 physical locations across all 50 states. Check them out.
+                </p>
+                <div class="linkReadMore">
+                  <a href="review-betway.html">
+                    Read More »
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr class="brand brandNo_9" id="brandM_59fc9f7ad0ad7a7b2e02e51a">
+              <td class='tdSite'>
+                <a class="outboundLink siteLogo" href="https://www.google.com">
+                  <img src="img/betsafe-logo-180x180.png" class="img-responsive center-block brandLogo brandLogo_size0" alt="Comeon">
+                  <img src="img/betsafe-logo-205x91.png" class="img-responsive center-block brandLogo brandLogo_size1" alt="Comeon">
+                  <br>
+                  <button class="outboundLink" onclick="window.open('https://www.google.com');" type="button">Visit&nbsp;Now</button>
+                </a>
+              </td>
+
+              <td class='tdReview'>
+                <p>While loan aggregators have become quite common, they all have something to call their own. In this regard, Comeon, like their name implies, seeks to give...</p>
+                <div class="linkReadMore">
+                  <a href="review-comeon.html">
+                    Read More »
+                  </a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--END REVIEWS MOBILE -->
+
+      <footer>
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="footer-disclaimer">
+                </div>
+                <ul class="list-inline footerNav">
+                  <li><a href="index.html">TOP 2</a></li>
+                  <li><a href="reviews.html">REVIEWS</a></li>
+                  <li><a href="mortgages.html">LIVE CASINO</a></li>
+                </ul>
+                <div class="referralText">We earn referral fees from sites featured.</div>
+                <div class="copyright">&copy;2021 ReviewComparePlay.com. All Rights Reserved.<br> Trademarks utilized on our website belong to their respective owners and no implied or expressed endorsement of our website or services is intended. Through in-depth research
+                  and experienced editors we provide feedback about products and services. We are independently owned, and opinions expressed here are our own. Ratings are determined by our subjective opinion and based on a methodology that
+                  considers our analysis of brand reputation, product offerings, customer success and conversion rates, compensation paid to us and general consumer interest. Please be advised that this site may accept compensation from
+                  brands that appear on the site, and such compensation may impact the numerical rankings, star ratings and or higher positions in which the companies (and/or their products) are listed. Except as expressly set forth in our
+                  Terms of Use, all representations and warranties regarding the information presented on this page are disclaimed. The information which appears on this site is subject to change at any time.
+                  <br><br> Arieli Center, 2689 Dundas St. W, Toronto, Canada </div>
+                <ul class="list-inline copyright">
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="https://www.google.com" target="_blank">Privacy
+                      Policy</a></li>
+                  <li><a href="terms.html">Terms of Use</a></li>
+                  <li><a href="https://www.google.com" target="_blank">CA
+                      Residents - Do Not Sell My Info</a></li>
+                  <li><a href="#" class="mfModal" data-toggle="modal" data-target="#modalHowWeRank">How We
+                      Rank</a></li>
+                  <li><a href="#" class="mfModal" data-toggle="modal" data-target="#modalAdvertiserDisclosure">Advertiser Disclosure</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade" id="modalHowWeRank" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <h4 id="modalTitle" class="modal-title">How We Rank</h4>
+            </div>
+            <div class="modal-body mfModalCopy">
+              <p>The sites that appear on this site are companies from which we receive compensation. Ranking and order of products on the site are subject to change and the site does not include all companies in the marketplace. Rankings are impacted
+                by site reputation, visitor interest and success rates, as well as, compensation paid by site. Compensation may impact the numerical rankings, star ratings and or higher positions in which the companies (and/or their products)
+                are listed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalAdvertiserDisclosure" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <h4 id="modalTitle" class="modal-title">Advertiser Disclosure</h4>
+            </div>
+            <div class="modal-body mfModalCopy">
+              <p>ReviewComparePlay.com is supported by referral fees from the sites featured. The sites and advertisements that we present are from companies from which ReviewCompare.org receives compensation. ReviewComparePlay.com cannot and does not present
+                information about every site or offer available.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="consent_blackbar" style="position: fixed; Width: 100%; bottom: 0; left: 0; z-index: 10000;"></div>
+      <div id="teconsent"></div>
+
+      <div id="infoModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 id="modalTitle" class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+              <div id="modalCopy" class="mfModalCopy left">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </body>
+
+</html>
